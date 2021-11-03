@@ -53,9 +53,6 @@ export default {
     display: inline-block;
     padding: 0 20px;
     font-weight: 500;
-    // font-family: 'Raleway', sans-serif;
-    // font-weight: 900;
-    // font-style: italic;
   }
 }
 </style>
