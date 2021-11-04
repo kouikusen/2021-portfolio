@@ -1,19 +1,17 @@
 <template>
-  <div class="card">
+  <div class="work-type-labels">
     <div class="card__content">
-      <h3 class="card__description">{{ item.description }}</h3>
-      <h2 class="card__title all__05-outline all__accent-font">
-        {{ item.title }}
-      </h2>
+      <h3 class="card__description">{{ description }}</h3>
+      <h2 class="card__title all__05-outline all__accent-font">{{ title }}</h2>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "WorkCard",
+  name: "WorkTypeLabels",
   props: {
-    item: Object,
+    types: String,
   },
 };
 </script>

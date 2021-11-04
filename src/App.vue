@@ -2,7 +2,11 @@
   <Header />
   <TopHero />
   <MainSection title="Works">
-    <WorkCard title="Mag2 Summer Awards 2021" description="Event Website" />
+    <WorkCard
+      v-for="item in Projects"
+      :key="item.title"
+      :item="item"
+    ></WorkCard>
   </MainSection>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Welcome to Your Vue.js App" />
@@ -15,6 +19,8 @@ import TopHero from "./components/TopHero.vue";
 import MainSection from "./components/MainSection.vue";
 import WorkCard from "./components/WorkCard.vue";
 
+import Projects from "./assets/data/projects.json";
+
 export default {
   name: "App",
   components: {
@@ -23,6 +29,11 @@ export default {
     TopHero,
     MainSection,
     WorkCard,
+  },
+  data() {
+    return {
+      Projects,
+    };
   },
 };
 </script>

@@ -47,8 +47,6 @@ export default {
     display: flex;
     justify-content: space-between;
   }
-  &__left-list {
-  }
   &__items {
     display: inline-block;
     padding: 0 20px;
