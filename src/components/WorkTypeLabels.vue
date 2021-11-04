@@ -55,6 +55,7 @@ export default {
     margin-right: 0.9rem;
     display: inline-block;
     padding: 8px 10px;
+    margin-top: 0.9rem;
 
     img {
       margin-right: 5px;

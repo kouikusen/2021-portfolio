@@ -38,6 +38,7 @@ export default {
   padding: 4rem 2rem;
   border-radius: 2rem;
   text-align: left;
+  margin-bottom: 2rem;
 
   transition: all 0.3s ease-in-out;
 
@@ -67,11 +68,11 @@ export default {
   }
 
   :hover > &__content > &__cover-image {
-    transform: translate(0, -25px);
+    transform: translate(0, -15px);
   }
 
-  :hover > & {
-    transform: translate(0, -20px);
+  &:hover {
+    transform: translate(0, -10px);
   }
 }
 </style>
