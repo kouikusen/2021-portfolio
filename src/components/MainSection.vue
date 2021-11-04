@@ -1,5 +1,5 @@
 <template>
-  <div class="main-section">
+  <div class="main-section" :class="{ special: ifSpecial }">
     <h1 class="main-section__title all__05-outline all__accent-font">
       {{ title }}
     </h1>
@@ -12,6 +12,7 @@ export default {
   name: "MainSection",
   props: {
     title: String,
+    ifSpecial: Boolean,
   },
 };
 </script>
@@ -31,6 +32,15 @@ export default {
     max-width: 1500px;
     padding: 2rem 1rem;
     margin: 0 auto;
+  }
+}
+
+.special {
+  background-color: $yellow;
+
+  .main-section__title {
+    // color: $black;
+    -webkit-text-stroke: $black 0.5px;
   }
 }
 </style>
