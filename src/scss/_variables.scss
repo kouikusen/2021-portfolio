@@ -3,6 +3,7 @@
 $black: #222222;
 $white: #ffffff;
 $darkGrey: #373737;
+$middleGrey: #777777;
 $gutter: 80px;
 
 html {
@@ -38,4 +39,12 @@ html {
 
     font-family: 'OCR A Std', sans-serif;
     // font-style: italic;
+}
+
+
+// animations
+
+@keyframes liftUp {
+  from {transform: translate(0,0);}
+  to {transform: translate(0,-20px);}
 }
