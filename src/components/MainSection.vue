@@ -26,5 +26,10 @@ export default {
   &__title {
     font-size: 5vw;
   }
+
+  &__content {
+    max-width: 1500px;
+    padding: 2rem 1rem;
+  }
 }
 </style>

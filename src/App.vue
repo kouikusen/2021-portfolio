@@ -1,7 +1,9 @@
 <template>
   <Header />
   <TopHero />
-  <MainSection title="Works"> test </MainSection>
+  <MainSection title="Works">
+    <WorkCard title="Mag2 Summer Awards 2021" description="Event Website" />
+  </MainSection>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Welcome to Your Vue.js App" />
 </template>
@@ -11,6 +13,7 @@ import HelloWorld from "./components/HelloWorld.vue";
 import Header from "./components/Header.vue";
 import TopHero from "./components/TopHero.vue";
 import MainSection from "./components/MainSection.vue";
+import WorkCard from "./components/WorkCard.vue";
 
 export default {
   name: "App",
@@ -19,6 +22,7 @@ export default {
     Header,
     TopHero,
     MainSection,
+    WorkCard,
   },
 };
 </script>
