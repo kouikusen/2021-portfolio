@@ -32,6 +32,22 @@
         "noInRow": "3"
     },
     {
+        "title": "CSIE Swimming Team Logo Design",
+        "imageUrl": "csieSwimmingTeam.jpg",
+        "tools": "Photoshop",
+        "url": "",
+        "row": "0",
+        "noInRow": "4"
+    },
+    {
+        "title": "Yu Poster Design",
+        "imageUrl": "yuPoster.jpg",
+        "tools": "Photoshop",
+        "url": "",
+        "row": "0",
+        "noInRow": "5"
+    },
+    {
         "title": "Macro Tokyo No.2",
         "imageUrl": "mtn2.jpg",
         "tools": "Procreate",
@@ -62,5 +78,13 @@
         "url": "https://www.instagram.com/p/COU98XIMDHE/",
         "row": "1",
         "noInRow": "3"
+    },
+    {
+        "title": "Kickover Project Logo Illustration",
+        "imageUrl": "kickoverLogo.png",
+        "tools": "Procreate",
+        "url": "",
+        "row": "1",
+        "noInRow": "4"
     }
 ]

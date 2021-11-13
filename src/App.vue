@@ -9,7 +9,7 @@
     ></WorkCard>
   </MainSection>
   <MainSection title="Creations" ifSpecial="true"
-    ><ImageGalleryRow />
+    ><ImageGalleryRow :items="Creations" />
   </MainSection>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Welcome to Your Vue.js App" />
