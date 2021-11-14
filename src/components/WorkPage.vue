@@ -36,6 +36,33 @@
     </div>
 
     <!-- previous/next -->
+    <div class="work__navigation">
+      <div class="work__navigation__item previous" v-if="item.no > 0">
+        <h5>PREVIOUS</h5>
+        <div class="work__navigation__card">
+          <img
+            :src="
+              require(`@/assets/images/works/${item.no - 1}__top-image.png`)
+            "
+            alt=""
+          />
+          title 1
+        </div>
+      </div>
+      <div class="work__navigation__item next" v-if="nextItem">
+        <h5>NEXT</h5>
+        <div class="work__navigation__card">
+          <div class="black-cover"></div>
+          <h6 class="all__05-outline all__accent-font">{{ nextItem.title }}</h6>
+          <img
+            :src="
+              require(`@/assets/images/works/${item.no + 1}__top-image.png`)
+            "
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -49,6 +76,7 @@ export default {
   },
   props: {
     item: Object,
+    nextItem: Object,
   },
   data() {
     return {};
@@ -87,6 +115,7 @@ export default {
     }
   }
 
+  // project info
   &__info {
     border-top: 5px solid $middleGrey;
     border-bottom: 5px solid $middleGrey;
@@ -119,6 +148,94 @@ export default {
             margin-bottom: 0.3rem;
           }
         }
+      }
+    }
+  }
+
+  // previous / next
+  &__navigation {
+    display: flex;
+    max-width: $paragraphMaxWidth;
+    padding: $gutter 10px;
+    gap: 2rem;
+
+    &__item {
+      width: 100%;
+      h5 {
+        position: relative;
+        font-weight: 700;
+        color: $middleGrey;
+        border-bottom: 1px solid $middleGrey;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .previous {
+      text-align: right;
+
+      h5::before {
+        content: "";
+        border-left: 1px solid $middleGrey;
+        width: 1px;
+        height: 100%;
+        left: 5px;
+        bottom: -3px;
+        position: absolute;
+        transform: rotate(45deg);
+        // transform: translateX(5px);
+      }
+    }
+
+    .next {
+      text-align: left;
+
+      h5::before {
+        content: "";
+        border-left: 1px solid $middleGrey;
+        width: 1px;
+        height: 100%;
+        right: 5px;
+        bottom: -3px;
+        position: absolute;
+        transform: rotate(-45deg);
+        // transform: translateX(5px);
+      }
+    }
+
+    &__card {
+      position: relative;
+      height: 150px;
+      img {
+        width: 100%;
+        height: 150px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        object-fit: cover;
+        z-index: 0;
+      }
+
+      h6 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        font-size: 2rem;
+      }
+
+      .black-cover {
+        background-color: $darkGrey;
+        opacity: 0.8;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
       }
     }
   }

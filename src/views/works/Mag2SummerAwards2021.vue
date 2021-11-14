@@ -1,5 +1,5 @@
 <template>
-  <WorkPage :item="item">
+  <WorkPage :item="item" :nextItem="nextItem">
     <img src="@/assets/images/works/0__top-cover.png" alt="cover image" />
     <p>
       In 2021 I designed and built an event website for an event called "Mag2
@@ -48,42 +48,29 @@ export default {
     return {
       Projects,
       item: {},
+      nextItem: {},
+      previousItem: {},
     };
   },
   created: function () {
-    const projectData = this.Projects.filter(function (el) {
-      return el.url === "Mag2-Summer-Awards-2021";
-    });
-    this.item = projectData[0];
+    const index = this.Projects.map(function (e) {
+      return e.url;
+    }).indexOf("Mag2-Summer-Awards-2021");
+
+    // set item
+    this.item = this.Projects[index];
+
+    // set next item
+    if (index + 1 < this.Projects.length) {
+      this.nextItem = this.Projects[index + 1];
+    }
+
+    if (index > 0) {
+      this.previousItem = this.Projects[index - 1];
+    }
   },
 };
 </script>
 
 <style scoped lang="scss">
-.work {
-  background-color: $black;
-  color: $white;
-
-  &__content {
-    max-width: $middleMaxWidth;
-    margin: $gutter auto;
-
-    * {
-      margin: 0 auto $gutter;
-    }
-
-    img {
-      // margin: $gutter 0;
-    }
-
-    p {
-      max-width: $paragraphMaxWidth;
-      text-align: left;
-    }
-  }
-
-  &__info {
-    border-top: 5px solid $middleGrey;
-  }
-}
 </style>
