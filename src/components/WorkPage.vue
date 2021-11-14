@@ -37,17 +37,23 @@
 
     <!-- previous/next -->
     <div class="work__navigation">
-      <div class="work__navigation__item previous" v-if="item.no > 0">
+      <div class="work__navigation__item previous" v-if="previousItem">
         <h5>PREVIOUS</h5>
-        <div class="work__navigation__card">
+        <router-link
+          :to="`/works/${previousItem.url}`"
+          class="work__navigation__card"
+        >
+          <div class="black-cover"></div>
+          <h6 class="all__05-outline all__accent-font">
+            {{ previousItem.title }}
+          </h6>
           <img
             :src="
               require(`@/assets/images/works/${item.no - 1}__top-image.png`)
             "
             alt=""
           />
-          title 1
-        </div>
+        </router-link>
       </div>
       <div class="work__navigation__item next" v-if="nextItem">
         <h5>NEXT</h5>
@@ -101,11 +107,15 @@ export default {
     // set next item
     if (index + 1 < this.Projects.length) {
       this.nextItem = this.Projects[index + 1];
+    } else {
+      this.nextItem = null;
     }
 
     // set previous item
     if (index > 0) {
       this.previousItem = this.Projects[index - 1];
+    } else {
+      this.previousItem = null;
     }
   },
   computed: {
@@ -252,7 +262,7 @@ export default {
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 2;
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
 
       .black-cover {

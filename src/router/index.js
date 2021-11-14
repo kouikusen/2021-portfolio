@@ -20,11 +20,23 @@ const routes = [
     name: 'Mag2 Summer Awards 2021',
     component: () => import(/* webpackChunkName: "about" */ '../views/works/Mag2SummerAwards2021.vue')
   },
+  {
+    path: '/works/Voting-Guide-2020',
+    name: 'Voting Guide 2020',
+    component: () => import(/* webpackChunkName: "about" */ '../views/works/VotingGuide2020.vue')
+  },
 ]
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes
+  routes,
 })
+
+router.beforeEach(function (to, from, next) {
+  setTimeout(() => {
+    window.scrollTo(0, 0);
+  }, 100);
+  next();
+});
 
 export default router

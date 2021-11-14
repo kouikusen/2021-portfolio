@@ -13,6 +13,8 @@ $smallMaxWidth: 1200px;
 $paragraphMaxWidth: 600px;
 
 html {
+
+  // set font for rem
     font-size: 16px;
       
     @media screen and (min-width: 900px) {
@@ -22,6 +24,9 @@ html {
     @media screen and (min-width: 1200px) {
       font-size: 20px;
     }
+
+    scroll-behavior: smooth;
+    background-color: $black;
   }
 
 .all__accent-color{
@@ -30,6 +35,7 @@ html {
 
 .all__05-outline {
     -webkit-text-stroke: 0.5px $white;
+    opacity: 0.8;
     color: rgba(0, 0, 0, 0);
 }
 
