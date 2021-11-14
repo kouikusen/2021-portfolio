@@ -1,5 +1,5 @@
 <template>
-  <WorkPage :item="item" :nextItem="nextItem">
+  <WorkPage :name="name">
     <img src="@/assets/images/works/0__top-cover.png" alt="cover image" />
     <p>
       In 2021 I designed and built an event website for an event called "Mag2
@@ -36,8 +36,6 @@
 <script>
 import WorkPage from "@/components/WorkPage.vue";
 
-import Projects from "@/assets/data/projects.json";
-
 export default {
   name: "Mag2 Summer Awards 2021",
   components: {
@@ -46,28 +44,8 @@ export default {
   props: {},
   data() {
     return {
-      Projects,
-      item: {},
-      nextItem: {},
-      previousItem: {},
+      name: "Mag2-Summer-Awards-2021",
     };
-  },
-  created: function () {
-    const index = this.Projects.map(function (e) {
-      return e.url;
-    }).indexOf("Mag2-Summer-Awards-2021");
-
-    // set item
-    this.item = this.Projects[index];
-
-    // set next item
-    if (index + 1 < this.Projects.length) {
-      this.nextItem = this.Projects[index + 1];
-    }
-
-    if (index > 0) {
-      this.previousItem = this.Projects[index - 1];
-    }
   },
 };
 </script>

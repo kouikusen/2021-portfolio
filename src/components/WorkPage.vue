@@ -51,7 +51,10 @@
       </div>
       <div class="work__navigation__item next" v-if="nextItem">
         <h5>NEXT</h5>
-        <div class="work__navigation__card">
+        <router-link
+          :to="`/works/${nextItem.url}`"
+          class="work__navigation__card"
+        >
           <div class="black-cover"></div>
           <h6 class="all__05-outline all__accent-font">{{ nextItem.title }}</h6>
           <img
@@ -60,7 +63,7 @@
             "
             alt=""
           />
-        </div>
+        </router-link>
       </div>
     </div>
   </div>
@@ -69,17 +72,41 @@
 <script>
 import WorkHero from "@/components/WorkHero.vue";
 
+import Projects from "@/assets/data/projects.json";
+
 export default {
   name: "Mag2 Summer Awards 2021",
   components: {
     WorkHero,
   },
   props: {
-    item: Object,
-    nextItem: Object,
+    name: String,
   },
   data() {
-    return {};
+    return {
+      Projects,
+      item: {},
+      nextItem: {},
+      previousItem: {},
+    };
+  },
+  created: function () {
+    const index = this.Projects.map(function (e) {
+      return e.url;
+    }).indexOf(this.name);
+
+    // set item
+    this.item = this.Projects[index];
+
+    // set next item
+    if (index + 1 < this.Projects.length) {
+      this.nextItem = this.Projects[index + 1];
+    }
+
+    // set previous item
+    if (index > 0) {
+      this.previousItem = this.Projects[index - 1];
+    }
   },
   computed: {
     getPositionItems: function () {
@@ -158,6 +185,7 @@ export default {
     max-width: $paragraphMaxWidth;
     padding: $gutter 10px;
     gap: 2rem;
+    margin-bottom: 0;
 
     &__item {
       width: 100%;
@@ -205,6 +233,7 @@ export default {
     &__card {
       position: relative;
       height: 150px;
+      display: block;
       img {
         width: 100%;
         height: 150px;
