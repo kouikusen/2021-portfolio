@@ -56,6 +56,7 @@ export default {
     display: inline-block;
     padding: 8px 10px;
     margin-top: 0.9rem;
+    color: $white;
 
     img {
       margin-right: 5px;

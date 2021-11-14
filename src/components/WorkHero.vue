@@ -1,32 +1,34 @@
 <template>
-  <div class="work">
-    <WorkHero :item="item" />
-    <div class="work-content"></div>
+  <div
+    class="work-hero"
+    :style="{
+      backgroundImage:
+        'url(' +
+        require(`@/assets/images/works/${item.no}__top-image.png`) +
+        ')',
+    }"
+  >
+    <div class="work-hero__content">
+      <h3 class="work-hero__description">{{ item.description }}</h3>
+      <h1 class="work-hero__title all__accent-font">{{ item.title }}</h1>
+      <WorkTypeLabels :types="item.types" />
+    </div>
   </div>
 </template>
 
 <script>
-import WorkHero from "@/components/WorkHero.vue";
-
-import Projects from "@/assets/data/projects.json";
+import WorkTypeLabels from "@/components/WorkTypeLabels.vue";
 
 export default {
-  name: "Mag2 Summer Awards 2021",
+  name: "WorkHero",
   components: {
-    WorkHero,
+    WorkTypeLabels,
   },
-  props: {},
+  props: {
+    item: Object,
+  },
   data() {
-    return {
-      Projects,
-      item: {},
-    };
-  },
-  created: function () {
-    const projectData = this.Projects.filter(function (el) {
-      return el.url === "Mag2-Summer-Awards-2021";
-    });
-    this.item = projectData[0];
+    return {};
   },
 };
 </script>
