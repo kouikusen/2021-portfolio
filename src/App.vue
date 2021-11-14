@@ -1,46 +1,24 @@
 <template>
   <Header />
-  <TopHero />
-  <MainSection title="Works">
-    <WorkCard
-      v-for="item in Projects"
-      :key="item.title"
-      :item="item"
-    ></WorkCard>
-  </MainSection>
-  <MainSection title="Creations" ifSpecial="true"
-    ><ImageGalleryRow :items="Creations" />
-  </MainSection>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+
+  <!-- <img alt="Vue logo" src="./assets/logo.png" />
+  <HelloWorld msg="Welcome to Your Vue.js App" /> -->
+  <router-view></router-view>
+  <Footer />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+// import HelloWorld from "./components/HelloWorld.vue";
 import Header from "./components/Header.vue";
-import TopHero from "./components/TopHero.vue";
-import MainSection from "./components/MainSection.vue";
-import WorkCard from "./components/WorkCard.vue";
-import ImageGalleryRow from "./components/ImageGalleryRow.vue";
 
-import Projects from "./assets/data/projects.json";
-import Creations from "./assets/data/creations.json";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    // HelloWorld,
     Header,
-    TopHero,
-    MainSection,
-    WorkCard,
-    ImageGalleryRow,
-  },
-  data() {
-    return {
-      Projects,
-      Creations,
-    };
+    Footer,
   },
 };
 </script>
