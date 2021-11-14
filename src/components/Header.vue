@@ -2,8 +2,8 @@
   <div class="header">
     <div class="header__container">
       <div class="header__list">
-        <a class="header__items" href="#">Work</a>
-        <a class="header__items" href="#">About</a>
+        <router-link class="header__items" to="/">Work</router-link>
+        <router-link class="header__items" to="/about">About</router-link>
         <a class="header__items" href="#">Contact</a>
       </div>
 

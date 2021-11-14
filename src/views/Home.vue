@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <TopHero />
-    <MainSection title="Works">
+    <MainSection title="Works" id="works">
       <WorkCard
         v-for="item in Projects"
         :key="item.title"

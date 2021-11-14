@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <router-link :to="`/works/${item.url}`" class="card">
     <div class="card__content">
       <h3 class="card__description">{{ item.description }}</h3>
       <h2 class="card__title all__05-outline all__accent-font">
@@ -8,7 +8,7 @@
       <WorkTypeLabels :types="item.types" />
       <img class="card__cover-image" :src="getCoverImage" alt="" />
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>
@@ -39,6 +39,9 @@ export default {
   border-radius: 2rem;
   text-align: left;
   margin-bottom: 2rem;
+  text-decoration: none;
+  color: $white;
+  display: block;
 
   transition: all 0.3s ease-in-out;
 
