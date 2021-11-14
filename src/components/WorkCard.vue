@@ -46,7 +46,7 @@ export default {
   transition: all 0.3s ease-in-out;
 
   &__content {
-    max-width: 1200px;
+    max-width: $smallMaxWidth;
     margin: 0 auto;
   }
 

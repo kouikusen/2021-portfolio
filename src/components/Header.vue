@@ -42,7 +42,7 @@ export default {
   }
 
   &__container {
-    max-width: 1600px;
+    max-width: $bigMaxWidth;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
