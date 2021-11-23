@@ -25,6 +25,21 @@ const routes = [
     name: 'Voting Guide 2020',
     component: () => import(/* webpackChunkName: "about" */ '../views/works/VotingGuide2020.vue')
   },
+  {
+    path: '/works/AR-New-Year-Card-2019',
+    name: 'AR-New-Year-Card-2019',
+    component: () => import(/* webpackChunkName: "about" */ '../views/works/VotingGuide2020.vue')
+  },
+  {
+    path: '/works/by-them-2019',
+    name: 'by-them-2019',
+    component: () => import(/* webpackChunkName: "about" */ '../views/works/VotingGuide2020.vue')
+  },
+  {
+    path: '/works/Mag2-Live-2020',
+    name: 'Mag2-Live-2020',
+    component: () => import(/* webpackChunkName: "about" */ '../views/works/VotingGuide2020.vue')
+  },
 ]
 
 const router = createRouter({

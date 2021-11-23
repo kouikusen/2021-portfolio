@@ -25,7 +25,7 @@ export default {
   computed: {
     getCoverImage: function () {
       return require("@/assets/images/works/" +
-        this.item.no +
+        this.item.url +
         "__top-cover.png");
     },
   },

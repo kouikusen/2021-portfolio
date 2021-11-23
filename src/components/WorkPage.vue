@@ -32,6 +32,12 @@
             <li>{{ item.year }}</li>
           </ul>
         </div>
+        <div class="work__info__row__item" v-if="item.www">
+          <h4>WWW</h4>
+          <ul>
+            <li>{{ item.www }}</li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -49,7 +55,9 @@
           </h6>
           <img
             :src="
-              require(`@/assets/images/works/${item.no - 1}__top-image.png`)
+              require(`@/assets/images/works/${
+                Projects[item.no - 1].url
+              }__top-image.png`)
             "
             alt=""
           />
@@ -65,7 +73,9 @@
           <h6 class="all__05-outline all__accent-font">{{ nextItem.title }}</h6>
           <img
             :src="
-              require(`@/assets/images/works/${item.no + 1}__top-image.png`)
+              require(`@/assets/images/works/${
+                Projects[item.no + 1].url
+              }__top-image.png`)
             "
             alt=""
           />
@@ -137,10 +147,15 @@ export default {
     margin: 0 auto $gutter;
   }
 
-  &__content {
+  &__content:deep {
     max-width: $middleMaxWidth;
     margin: $gutter auto;
     padding: 1rem;
+
+    * {
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     img {
       width: 100%;

@@ -30,16 +30,16 @@ export default {
   },
   computed: {
     ifUIUXDesign: function () {
-      return this.types.indexOf("1") !== -1;
+      return this.types.indexOf("a") !== -1;
     },
     ifGraphicDesign: function () {
-      return this.types.indexOf("2") !== -1;
+      return this.types.indexOf("b") !== -1;
     },
     if3DArt: function () {
-      return this.types.indexOf("3") !== -1;
+      return this.types.indexOf("c") !== -1;
     },
     ifFrontendDev: function () {
-      return this.types.indexOf("4") !== -1;
+      return this.types.indexOf("d") !== -1;
     },
   },
 };
@@ -57,6 +57,7 @@ export default {
     padding: 8px 10px;
     margin-top: 0.9rem;
     color: $white;
+    font-size: 0.8rem;
 
     img {
       margin-right: 5px;

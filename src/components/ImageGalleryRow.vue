@@ -76,13 +76,13 @@ export default {
   overflow-x: scroll;
   padding: 10px 0;
 
-  &__row-container {
-    animation: slide infinite 20s alternate;
-    animation-timing-function: linear, ease-in;
-    &:hover {
-      animation-play-state: paused;
-    }
-  }
+  // &__row-container {
+  //   animation: slide infinite 20s alternate;
+  //   animation-timing-function: linear, ease-in;
+  //   &:hover {
+  //     animation-play-state: paused;
+  //   }
+  // }
 
   &__row {
     display: flex;
@@ -116,6 +116,25 @@ export default {
       right: 5px;
     }
   }
+}
+/* width */
+::-webkit-scrollbar {
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $darkGrey;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $black;
 }
 @keyframes slide {
   0% {

@@ -1,6 +1,9 @@
 <template>
   <WorkPage :name="name">
-    <img src="@/assets/images/works/0__top-cover.png" alt="cover image" />
+    <img
+      src="@/assets/images/works/Voting-Guide-2020__top-cover.png"
+      alt="cover image"
+    />
     <p>
       In 2021 I designed and built an event website for an event called "Mag2
       Summer Awards 2021" for Magmag, Inc.<br />

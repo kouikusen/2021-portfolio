@@ -36,7 +36,11 @@ export default {
 }
 
 .special {
-  background-color: $yellow;
+  background-color: $white;
+
+  background-image: url("../assets/images/canvas-texture.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
 
   .main-section__title {
     // color: $black;

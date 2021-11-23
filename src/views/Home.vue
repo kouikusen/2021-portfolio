@@ -8,7 +8,7 @@
         :item="item"
       ></WorkCard>
     </MainSection>
-    <MainSection title="Creations" ifSpecial="true"
+    <MainSection title="Creations" :ifSpecial="true"
       ><ImageGalleryRow :items="Creations" />
     </MainSection>
   </div>

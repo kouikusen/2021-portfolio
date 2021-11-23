@@ -4,7 +4,7 @@
     :style="{
       backgroundImage:
         'url(' +
-        require(`@/assets/images/works/${item.no}__top-image.png`) +
+        require(`@/assets/images/works/${item.url}__top-image.png`) +
         ')',
     }"
   >
