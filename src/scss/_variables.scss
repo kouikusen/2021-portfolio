@@ -4,8 +4,11 @@ $black: #222222;
 $white: #ffffff;
 $darkGrey: #373737;
 $middleGrey: #777777;
+$lightGrey: #E0E0E0;
 $yellow: #FFDF00;
+
 $gutter: 80px;
+$gutter-s: 40px;
 
 $bigMaxWidth: 1600px;
 $middleMaxWidth: 1300px;
@@ -43,4 +46,10 @@ $paragraphMaxWidth: 600px;
 @keyframes liftUp {
   from {transform: translate(0,0);}
   to {transform: translate(0,-20px);}
+}
+
+@mixin sp {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
 }
