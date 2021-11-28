@@ -31,9 +31,9 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/works/VotingGuide2020.vue')
   },
   {
-    path: '/works/by-them-2019',
-    name: 'by-them-2019',
-    component: () => import(/* webpackChunkName: "about" */ '../views/works/VotingGuide2020.vue')
+    path: '/works/by-them',
+    name: 'by-them',
+    component: () => import(/* webpackChunkName: "about" */ '../views/works/ByThem.vue')
   },
   {
     path: '/works/Mag2-Live-2020',

@@ -35,7 +35,11 @@
         <div class="work__info__row__item" v-if="item.www">
           <h4>WWW</h4>
           <ul>
-            <li>{{ item.www }}</li>
+            <li>
+              <a class="underline-yellow" :href="item.www" target="_blank">{{
+                item.www
+              }}</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -171,6 +175,7 @@ export default {
       color: $middleGrey;
       border-bottom: 1px solid $middleGrey;
       margin-bottom: $gutter;
+      margin-top: $gutter;
       text-align: left;
     }
   }

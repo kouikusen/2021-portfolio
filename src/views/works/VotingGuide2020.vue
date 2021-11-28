@@ -53,7 +53,7 @@
           through web crawling.<br />
           <br />
           Voters can quickly grasp the candidate’s point of view and investments
-          in online marketing through his/hers Facebook Ad Campaigns.
+          in online marketing through their Facebook Ad Campaigns.
         </p>
       </div>
 

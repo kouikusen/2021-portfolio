@@ -53,3 +53,17 @@ $paragraphMaxWidth: 600px;
     @content;
   }
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.underline-yellow {
+  border-bottom: 3px solid $yellow;
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    border-bottom: 5px solid $yellow;
+  }
+}

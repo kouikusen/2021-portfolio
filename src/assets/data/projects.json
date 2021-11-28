@@ -1,19 +1,7 @@
 [
     {
-        "title": "Mag2 Summer Awards 2021",
-        "no": 0,
-        "description": "Event Website",
-        "work": "UI/UX Design\nGraphic Design\n3D Animation\nFront-end Development",
-        "position": "Chief Designer\nChief Developer",
-        "org": "Magmag, Inc.",
-        "year": 2021,
-        "www": "",
-        "types": "abcd",
-        "url": "Mag2-Summer-Awards-2021"
-    },
-    {
         "title": "Voting Guide 2020",
-        "no": 1,
+        "no": 0,
         "description": "Informational Website",
         "work": "UI/UX Design\nFrontend Development",
         "position": "Designer\nDeveloper",
@@ -24,8 +12,32 @@
         "url": "Voting-Guide-2020"
     },
     {
-        "title": "AR New Year Card",
+        "title": "Mag2 Summer Awards 2021",
+        "no": 1,
+        "description": "Event Website",
+        "work": "UI/UX Design\nGraphic Design\n3D Animation\nFront-end Development",
+        "position": "Chief Designer\nChief Developer",
+        "org": "Magmag, Inc.",
+        "year": 2021,
+        "www": "",
+        "types": "abcd",
+        "url": "Mag2-Summer-Awards-2021"
+    },
+    {
+        "title": "by them",
         "no": 2,
+        "description": "Content Site",
+        "work": "UI/UX Design\nLogo Design",
+        "position": "Chief Designer",
+        "org": "Magmag, Inc.",
+        "year": 2019,
+        "www": "https://by-them.com",
+        "types": "ab",
+        "url": "by-them"
+    },
+    {
+        "title": "AR New Year Card",
+        "no": 3,
         "description": "Web-based AR Experience",
         "work": "UI/UX Design\nGraphic Design\n3D Modeling\nWeb Development",
         "position": "Chief Designer\nChief Developer",
@@ -36,19 +48,7 @@
         "url": "AR-New-Year-Card-2019"
     },
     {
-        "title": "by them",
-        "no": 3,
-        "description": "Content Site",
-        "work": "UI/UX Design\nLogo Design",
-        "position": "Chief Designer",
-        "org": "Magmag, Inc.",
-        "year": 2019,
-        "www": "https://by-them.com",
-        "types": "ab",
-        "url": "by-them-2019"
-    },
-    {
-        "title": "Mag2 Live!",
+        "title": "Mag2! Live",
         "no": 4,
         "description": "iOS/Android Application",
         "work": "UI/UX Design\nLogo Design",

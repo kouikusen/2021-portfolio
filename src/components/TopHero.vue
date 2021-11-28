@@ -3,9 +3,9 @@
     <div class="hero__text-container all__accent-font all__05-outline">
       <h1 class="hero__main-title">
         <span class="hero__accent-text"
-          >Hi<span class="all__accent-color">.</span></span
+          >Hi<span class="all__accent-color">!</span></span
         >
-        I am Kiks.
+        I am Kou.
       </h1>
       <h2 class="hero__sub-title">A Designer-Developer.</h2>
     </div>
