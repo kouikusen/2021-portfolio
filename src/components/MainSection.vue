@@ -26,6 +26,10 @@ export default {
 
   &__title {
     font-size: 5vw;
+
+    @include sp {
+      font-size: 2rem;
+    }
   }
 
   &__content {

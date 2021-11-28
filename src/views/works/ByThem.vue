@@ -21,7 +21,7 @@
       </div>
       <div>
         <img
-          src="@/assets/images/works/by-them__logo.png"
+          src="@/assets/images/works/by-them__logo.svg"
           alt="Logo"
           style="max-width: 350px"
         />

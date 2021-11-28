@@ -46,6 +46,10 @@ export default {
     background-blend-mode: overlay;
   }
 
+  @include sp {
+    height: 100%;
+  }
+
   &__content {
     position: absolute;
     left: 50%;
@@ -54,6 +58,14 @@ export default {
     text-align: left;
 
     color: var(--white);
+
+    @include sp {
+      position: relative;
+      transform: translate(0, 0);
+      top: 0;
+      left: 0;
+      padding: $gutter-s;
+    }
   }
 
   &__description {

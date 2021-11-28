@@ -177,6 +177,10 @@ export default {
       margin-bottom: $gutter;
       margin-top: $gutter;
       text-align: left;
+
+      @include sp {
+        margin-bottom: 20px;
+      }
     }
   }
 

@@ -46,11 +46,19 @@ export default {
   &__main-title {
     font-size: 8vw;
     margin: 0;
+
+    @include sp {
+      font-size: 2rem;
+    }
   }
 
   &__sub-title {
     font-size: 5vw;
     margin: 0;
+
+    @include sp {
+      font-size: 1.8rem;
+    }
   }
 
   &__accent-text {
@@ -70,6 +78,10 @@ export default {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
+
+    @include sp {
+      width: 90vw;
+    }
   }
 }
 </style>

@@ -58,12 +58,21 @@ export default {
     font-size: 3rem;
     margin-top: 0;
     transition: all 0.3s ease-in-out;
+
+    @include sp {
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
   }
 
   &__cover-image {
     width: 100%;
     margin: 4rem auto;
     transition: all 0.3s ease-in-out;
+
+    @include sp {
+      margin: 20px auto;
+    }
   }
 
   :hover > &__content > &__title {

@@ -48,6 +48,13 @@ export default {
     z-index: 1;
     max-width: $paragraphMaxWidth;
 
+    @include sp {
+      position: relative;
+      transform: translate(0, 0);
+      left: 0;
+      top: 0;
+    }
+
     img {
       margin: $gutter-s auto;
       display: block;

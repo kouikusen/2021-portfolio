@@ -37,6 +37,10 @@ export default {
   padding: 40px 20px;
   backdrop-filter: blur(10px);
 
+  @include sp {
+    padding: 20px;
+  }
+
   a {
     color: var(--white);
     text-decoration: none;
