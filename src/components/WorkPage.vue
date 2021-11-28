@@ -165,6 +165,14 @@ export default {
       max-width: $paragraphMaxWidth;
       text-align: left;
     }
+
+    h1 {
+      font-size: 1.5rem;
+      color: $middleGrey;
+      border-bottom: 1px solid $middleGrey;
+      margin-bottom: $gutter;
+      text-align: left;
+    }
   }
 
   // project info

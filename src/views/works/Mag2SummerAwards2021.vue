@@ -27,11 +27,11 @@
     <p>
       This is the first time I tried to implement 3D modeling and animation
       using Cinema 4D and Realflow to create a 3D fluid simulation animation to
-      build the key visual for the site. The design is **combine** by a 3D model
-      of a trophy with the company’s official character and a fluid simulation.
-      It symbolize the summer element which most of us living in Tokyo can’t get
-      to enjoy during the pandemic. Then I used Adobe After Effects to compose
-      them into a video clip as a opening video for the website.
+      build the key visual for the site. The design is combined by a 3D model of
+      a trophy with the company’s official character and a fluid simulation. It
+      symbolize the summer element which most of us living in Tokyo can’t get to
+      enjoy during the pandemic. Then I used Adobe After Effects to compose them
+      into a video clip as a opening video for the website.
     </p>
   </WorkPage>
 </template>
