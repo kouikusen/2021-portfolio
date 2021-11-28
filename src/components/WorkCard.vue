@@ -34,13 +34,13 @@ export default {
 
 <style scoped lang="scss">
 .card {
-  background-color: $darkGrey;
+  background-color: var(--dark-grey);
   padding: 4rem 2rem;
   border-radius: 2rem;
   text-align: left;
   margin-bottom: 2rem;
   text-decoration: none;
-  color: $white;
+  color: var(--white);
   display: block;
 
   transition: all 0.3s ease-in-out;
@@ -67,7 +67,7 @@ export default {
   }
 
   :hover > &__content > &__title {
-    color: $white;
+    color: var(--white);
   }
 
   :hover > &__content > &__cover-image {

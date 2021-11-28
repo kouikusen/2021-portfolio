@@ -34,7 +34,7 @@ export default {
 }
 
 .background-black {
-  background-color: $black;
+  background-color: var(--black);
 }
 
 .scale-enter-active,

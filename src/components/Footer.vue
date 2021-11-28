@@ -13,8 +13,8 @@ export default {
 
 <style scoped lang="scss">
 .footer {
-  background-color: $black;
-  color: $white;
+  background-color: var(--black);
+  color: var(--white);
   padding: 80px 10px;
 }
 </style>

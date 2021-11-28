@@ -129,12 +129,12 @@ export default {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $darkGrey;
+  background: var(--dark-grey);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: $black;
+  background: var(--black);
 }
 @keyframes slide {
   0% {

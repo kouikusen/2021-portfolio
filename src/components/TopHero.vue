@@ -24,7 +24,7 @@ export default {
 <style scoped lang="scss">
 .hero {
   height: 100vh;
-  background-color: $black;
+  background-color: var(--black);
 
   // text
   &__text-container {
@@ -37,6 +37,10 @@ export default {
     z-index: 1;
 
     letter-spacing: -5px;
+
+    @media (prefers-color-scheme: light) {
+      color: var(--black) !important;
+    }
   }
 
   &__main-title {

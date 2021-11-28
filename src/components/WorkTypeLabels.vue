@@ -50,19 +50,23 @@ export default {
   padding: 0;
 
   &__item {
-    background-color: $middleGrey;
+    background-color: var(--middle-grey);
     list-style: none;
     margin-right: 0.9rem;
     display: inline-block;
     padding: 8px 10px;
     margin-top: 0.9rem;
-    color: $white;
+    color: var(--white);
     font-size: 0.8rem;
 
     img {
       margin-right: 5px;
       vertical-align: middle;
       height: 100%;
+
+      @media (prefers-color-scheme: light) {
+        filter: invert(0.5);
+      }
     }
   }
 }

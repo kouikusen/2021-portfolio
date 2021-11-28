@@ -32,7 +32,7 @@ export default {
 <style scoped lang="scss">
 .hero {
   height: 100vh;
-  background-color: $black;
+  background-color: var(--black);
 
   // text
   &__text-container {
@@ -43,7 +43,7 @@ export default {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    color: $white;
+    color: var(--white);
 
     z-index: 1;
     max-width: $paragraphMaxWidth;

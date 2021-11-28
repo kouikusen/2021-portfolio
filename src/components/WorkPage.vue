@@ -145,8 +145,8 @@ export default {
 
 <style scoped lang="scss">
 .work {
-  background-color: $black;
-  color: $white;
+  background-color: var(--black);
+  color: var(--white);
   * {
     margin: 0 auto $gutter;
   }
@@ -172,8 +172,8 @@ export default {
 
     h1 {
       font-size: 1.5rem;
-      color: $middleGrey;
-      border-bottom: 1px solid $middleGrey;
+      color: var(--middle-grey);
+      border-bottom: 1px solid var(--middle-grey);
       margin-bottom: $gutter;
       margin-top: $gutter;
       text-align: left;
@@ -182,8 +182,8 @@ export default {
 
   // project info
   &__info {
-    border-top: 5px solid $middleGrey;
-    border-bottom: 5px solid $middleGrey;
+    border-top: 5px solid var(--middle-grey);
+    border-bottom: 5px solid var(--middle-grey);
     max-width: $paragraphMaxWidth;
     padding: $gutter 10px;
     * {
@@ -203,7 +203,7 @@ export default {
         text-align: left;
         h4 {
           font-size: 0.8rem;
-          color: $middleGrey;
+          color: var(--middle-grey);
           margin-bottom: 0.5rem;
         }
         ul {
@@ -230,8 +230,8 @@ export default {
       h5 {
         position: relative;
         font-weight: 700;
-        color: $middleGrey;
-        border-bottom: 1px solid $middleGrey;
+        color: var(--middle-grey);
+        border-bottom: 1px solid var(--middle-grey);
         margin-bottom: 1rem;
       }
     }
@@ -241,7 +241,7 @@ export default {
 
       h5::before {
         content: "";
-        border-left: 1px solid $middleGrey;
+        border-left: 1px solid var(--middle-grey);
         width: 1px;
         height: 100%;
         left: 5px;
@@ -257,7 +257,7 @@ export default {
 
       h5::before {
         content: "";
-        border-left: 1px solid $middleGrey;
+        border-left: 1px solid var(--middle-grey);
         width: 1px;
         height: 100%;
         right: 5px;
@@ -294,7 +294,7 @@ export default {
       }
 
       .black-cover {
-        background-color: $darkGrey;
+        background-color: var(--dark-grey);
         opacity: 0.8;
         z-index: 1;
         position: absolute;

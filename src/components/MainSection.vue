@@ -19,10 +19,10 @@ export default {
 
 <style scoped lang="scss">
 .main-section {
-  background-color: $black;
+  background-color: var(--black);
   padding: $gutter 0;
 
-  color: $white;
+  color: var(--white);
 
   &__title {
     font-size: 5vw;
@@ -36,15 +36,15 @@ export default {
 }
 
 .special {
-  background-color: $white;
+  background-color: var(--white);
 
   background-image: url("../assets/images/canvas-texture.jpg");
   background-blend-mode: multiply;
   background-size: cover;
 
   .main-section__title {
-    // color: $black;
-    -webkit-text-stroke: $black 0.5px;
+    // color: var(--black);
+    -webkit-text-stroke: var(--black) 0.5px;
   }
 }
 </style>

@@ -98,9 +98,9 @@ export default {
   }
 
   &__item {
-    background-color: $white;
+    background-color: var(--white);
     position: relative;
-    color: $black;
+    color: var(--black);
     border-radius: 20px;
     padding: 20px;
 
@@ -125,7 +125,7 @@ export default {
 
     .year {
       text-align: right;
-      color: $lightGrey;
+      color: var(--light-grey);
       font-size: 1rem;
       margin: 0;
 
@@ -167,7 +167,7 @@ export default {
     background-size: 20px 20px;
     background-image: radial-gradient(
       circle at -5px 10px,
-      $black 13px,
+      var(--black) 13px,
       transparent 12px
     );
   }
@@ -183,7 +183,7 @@ export default {
     background-size: 40px 20px;
     background-image: radial-gradient(
       circle at 15px 10px,
-      $black 12px,
+      var(--black) 12px,
       transparent 13px
     );
   }

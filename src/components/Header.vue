@@ -28,17 +28,23 @@ export default {
 <style scoped lang="scss">
 .header {
   color: #fff;
-  background-color: $black;
+  background-color: rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
   padding: 40px 20px;
+  backdrop-filter: blur(10px);
 
   a {
-    color: $white;
+    color: var(--white);
     text-decoration: none;
+  }
+
+  &__list {
+    display: flex;
+    column-gap: 20px;
   }
 
   &__container {
@@ -49,8 +55,14 @@ export default {
   }
   &__items {
     display: inline-block;
-    padding: 0 20px;
+    // padding: 0 20px;
     font-weight: 500;
+
+    img {
+      @media (prefers-color-scheme: light) {
+        filter: invert(1);
+      }
+    }
   }
 }
 </style>

@@ -7,6 +7,37 @@ $middleGrey: #777777;
 $lightGrey: #E0E0E0;
 $yellow: #FFDF00;
 
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+html{
+--black: #222222;
+--white: #ffffff;
+
+--dark-grey: #373737;
+--light-grey: #E0E0E0;
+--middle-grey: #777777;
+}
+}
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+html{
+  --black: #F8F8F8;
+  --white: #222222;
+  --dark-grey: #E0E0E0;
+  --light-grey: #373737;
+  --middle-grey: #C6C6C6;
+
+  .all__05-outline {
+    -webkit-text-stroke: 0.5px var(--white);
+    opacity: 0.8;
+    color: rgba(0, 0, 0, 0);
+  }
+}
+
+
+}
+
 $gutter: 80px;
 $gutter-s: 40px;
 

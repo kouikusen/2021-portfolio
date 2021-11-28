@@ -40,8 +40,11 @@ export default {
 
   background-size: cover;
   background-position: center;
-  background-color: $darkGrey;
+  background-color: var(--dark-grey);
   background-blend-mode: multiply;
+  @media (prefers-color-scheme: light) {
+    background-blend-mode: overlay;
+  }
 
   &__content {
     position: absolute;
@@ -50,7 +53,7 @@ export default {
     transform: translate(-50%, -50%);
     text-align: left;
 
-    color: $white;
+    color: var(--white);
   }
 
   &__description {
