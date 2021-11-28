@@ -13,32 +13,32 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import('../views/About.vue')
   },
   {
     path: '/works/Mag2-Summer-Awards-2021',
     name: 'Mag2 Summer Awards 2021',
-    component: () => import(/* webpackChunkName: "about" */ '../views/works/Mag2SummerAwards2021.vue')
+    component: () => import('../views/works/Mag2SummerAwards2021.vue')
   },
   {
     path: '/works/Voting-Guide-2020',
     name: 'Voting Guide 2020',
-    component: () => import(/* webpackChunkName: "about" */ '../views/works/VotingGuide2020.vue')
+    component: () => import('../views/works/VotingGuide2020.vue')
   },
   {
     path: '/works/AR-New-Year-Card-2019',
     name: 'AR-New-Year-Card-2019',
-    component: () => import(/* webpackChunkName: "about" */ '../views/works/VotingGuide2020.vue')
+    component: () => import('../views/works/ARNewYearCard2019.vue')
   },
   {
     path: '/works/by-them',
     name: 'by-them',
-    component: () => import(/* webpackChunkName: "about" */ '../views/works/ByThem.vue')
+    component: () => import('../views/works/ByThem.vue')
   },
   {
     path: '/works/Mag2-Live-2020',
     name: 'Mag2-Live-2020',
-    component: () => import(/* webpackChunkName: "about" */ '../views/works/VotingGuide2020.vue')
+    component: () => import('../views/works/VotingGuide2020.vue')
   },
 ]
 

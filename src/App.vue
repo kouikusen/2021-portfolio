@@ -2,7 +2,7 @@
   <Header />
   <div class="background-black">
     <router-view v-slot="{ Component }">
-      <transition name="scale" mode="out-in">
+      <transition name="scale-custom" mode="out-in">
         <component :is="Component" />
       </transition>
     </router-view>
@@ -37,13 +37,13 @@ export default {
   background-color: var(--black);
 }
 
-.scale-enter-active,
-.scale-leave-active {
+.scale-custom-enter-active,
+.scale-custom-leave-active {
   transition: all 0.5s ease;
 }
 
-.scale-enter-from,
-.scale-leave-to {
+.scale-custom-enter-from,
+.scale-custom-leave-to {
   opacity: 0;
   transform: scale(0.9);
 }

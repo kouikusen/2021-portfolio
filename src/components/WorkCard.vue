@@ -45,6 +45,12 @@ export default {
 
   transition: all 0.3s ease-in-out;
 
+  @media (prefers-color-scheme: light) {
+    background-color: #fcfcfc;
+    border: 1px solid var(--dark-grey);
+    filter: drop-shadow(0px 15px 20px #e0e0e0);
+  }
+
   &__content {
     max-width: $smallMaxWidth;
     margin: 0 auto;
@@ -76,7 +82,8 @@ export default {
   }
 
   :hover > &__content > &__title {
-    color: var(--white);
+    // color: var(--white);
+    color: $yellow;
   }
 
   :hover > &__content > &__cover-image {

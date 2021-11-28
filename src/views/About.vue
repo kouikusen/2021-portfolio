@@ -130,7 +130,7 @@ export default {
       margin: 0;
 
       @media (prefers-color-scheme: light) {
-        color: #777777;
+        color: var(--middle-grey);
       }
     }
 

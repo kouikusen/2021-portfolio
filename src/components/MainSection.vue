@@ -2,6 +2,7 @@
   <div class="main-section" :class="{ special: ifSpecial }">
     <h1 class="main-section__title all__05-outline all__accent-font">
       {{ title }}
+      <span class="blink">_</span>
     </h1>
     <div class="main-section__content"><slot></slot></div>
   </div>
@@ -30,12 +31,32 @@ export default {
     @include sp {
       font-size: 2rem;
     }
+
+    .blink {
+      animation: blink 1s step-end infinite;
+      -webkit-animation: blink 1s step-end infinite;
+
+      position: absolute;
+      transform: scaleX(0.5);
+      -webkit-transform: scaleX(0.5);
+    }
   }
 
   &__content {
     max-width: $middleMaxWidth;
     padding: 2rem 1rem;
     margin: 0 auto;
+  }
+}
+
+@keyframes blink {
+  75% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes blink {
+  75% {
+    opacity: 0;
   }
 }
 

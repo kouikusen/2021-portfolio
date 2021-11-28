@@ -182,6 +182,21 @@ export default {
         margin-bottom: 20px;
       }
     }
+
+    .flex {
+      display: flex;
+      align-items: center;
+      margin-bottom: $gutter;
+      column-gap: 20px;
+
+      @include sp {
+        display: block;
+      }
+    }
+
+    .reverse {
+      flex-direction: row-reverse;
+    }
   }
 
   // project info

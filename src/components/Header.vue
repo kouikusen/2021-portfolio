@@ -56,6 +56,13 @@ export default {
   a {
     color: var(--white);
     text-decoration: none;
+    box-sizing: border-box;
+    border-bottom: 5px solid rgba(0, 0, 0, 0);
+
+    &:hover {
+      border-bottom: 5px solid $yellow;
+      transition: all 0.1s ease-in-out;
+    }
   }
 
   &__list {
