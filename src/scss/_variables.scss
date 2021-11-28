@@ -7,6 +7,17 @@ $middleGrey: #777777;
 $lightGrey: #E0E0E0;
 $yellow: #FFDF00;
 
+:root {
+  html {
+    --black: #222222;
+--white: #ffffff;
+
+--dark-grey: #373737;
+--light-grey: #E0E0E0;
+--middle-grey: #777777;
+  }
+}
+
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
 html{
@@ -78,6 +89,9 @@ $paragraphMaxWidth: 600px;
   from {transform: translate(0,0);}
   to {transform: translate(0,-20px);}
 }
+
+
+// include sp
 
 @mixin sp {
   @media only screen and (max-width: 768px) {

@@ -5,7 +5,7 @@
         <span class="hero__accent-text"
           >Hi<span class="all__accent-color">!</span></span
         >
-        I am Kou.
+        I am <span class="all__accent-color">Kou</span>.
       </h1>
       <h2 class="hero__sub-title">A Designer-Developer.</h2>
     </div>
@@ -41,6 +41,11 @@ export default {
     @media (prefers-color-scheme: light) {
       color: var(--black) !important;
     }
+
+    @include sp {
+      bottom: 5%;
+      left: 10%;
+    }
   }
 
   &__main-title {
@@ -48,7 +53,7 @@ export default {
     margin: 0;
 
     @include sp {
-      font-size: 2rem;
+      font-size: 3rem;
     }
   }
 
@@ -57,7 +62,7 @@ export default {
     margin: 0;
 
     @include sp {
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
   }
 
@@ -79,8 +84,13 @@ export default {
     background-repeat: no-repeat;
     background-position: right;
 
+    @media (prefers-color-scheme: light) {
+      background-image: url("~@/assets/images/top__kiks-photo__light.png");
+    }
+
     @include sp {
       width: 90vw;
+      top: 5%;
     }
   }
 }

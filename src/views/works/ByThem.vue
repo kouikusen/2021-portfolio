@@ -38,7 +38,11 @@
         alt="Logo"
         style="max-width: 200px"
       />
-      <img src="@/assets/images/works/by-them__logo-final-2.png" alt="Logo" />
+      <img
+        src="@/assets/images/works/by-them__logo-final-2.png"
+        alt="Logo"
+        style="max-width: 800px"
+      />
     </div>
 
     <h1>WEB DESIGN</h1>

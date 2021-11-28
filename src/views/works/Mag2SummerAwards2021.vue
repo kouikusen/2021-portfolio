@@ -15,15 +15,17 @@
       components’ template code to make it a dynamic website.<br />
       <br />
     </p>
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/cb1XEWruvOw?controls=1&autoplay=1&loop=1"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
+    <div class="video-wrap">
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/cb1XEWruvOw?controls=1&autoplay=1&loop=1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
     <p>
       This is the first time I tried to implement 3D modeling and animation
       using Cinema 4D and Realflow to create a 3D fluid simulation animation to
@@ -54,4 +56,27 @@ export default {
 </script>
 
 <style scoped lang="scss">
+/* Set your aspect ratio */
+.video-container {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 56.25%; /* creates a 16:9 aspect ratio */
+}
+
+.video-container iframe,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+}
+
+/* And set the max-width of the parent element */
+.video-wrap {
+  width: 100%;
+  max-width: 600px;
+}
 </style>

@@ -8,10 +8,18 @@
       </div>
 
       <div class="header__list">
-        <a class="header__items" href="#">
+        <a
+          class="header__items"
+          href="https://twitter.com/kiks19k"
+          target="_blank"
+        >
           <img src="@/assets/icons/twitter.svg" alt="" />
         </a>
-        <a class="header__items" href="#">
+        <a
+          class="header__items"
+          href="https://www.instagram.com/kou.ikusen/"
+          target="_blank"
+        >
           <img src="@/assets/icons/instagram.svg" alt="" />
         </a>
       </div>
@@ -36,6 +44,10 @@ export default {
   z-index: 100;
   padding: 40px 20px;
   backdrop-filter: blur(10px);
+
+  @media (prefers-color-scheme: dark) {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
 
   @include sp {
     padding: 20px;

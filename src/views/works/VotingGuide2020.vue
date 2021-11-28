@@ -108,9 +108,9 @@
     <div class="flex">
       <div>
         <p>
-          I drew this illustration to promote our website, and more importantly,
-          to tell people the importance of democracy and politics through a
-          simple story. <br />
+          I created this illustration to promote our website, and more
+          importantly, to tell people the importance of democracy and politics
+          through a simple story. <br />
           It starts by imaging we all live alongside a river and we all live on
           agriculture. Since we are all farmers, where the river goes become
           important because people getting more water are going to have more

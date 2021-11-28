@@ -129,9 +129,9 @@ export default {
       font-size: 1rem;
       margin: 0;
 
-      // position: absolute;
-      // right: 10px;
-      // bottom: 0;
+      @media (prefers-color-scheme: light) {
+        color: #777777;
+      }
     }
 
     &:first-child {
@@ -183,7 +183,7 @@ export default {
     background-size: 40px 20px;
     background-image: radial-gradient(
       circle at 15px 10px,
-      var(--black) 12px,
+      var(--black) 13px,
       transparent 13px
     );
   }
