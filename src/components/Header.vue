@@ -4,7 +4,7 @@
       <div class="header__list">
         <router-link class="header__items" to="/">Work</router-link>
         <router-link class="header__items" to="/about">About</router-link>
-        <a class="header__items" href="#">Contact</a>
+        <a class="header__items" @click="scrollMeTo('contact')">Contact</a>
       </div>
 
       <div class="header__list">
@@ -30,6 +30,14 @@
 <script>
 export default {
   name: "Header",
+  methods: {
+    scrollMeTo(refName) {
+      var element = document.getElementById(refName);
+      var top = element.offsetTop;
+
+      window.scrollTo({ top: top, behavior: "smooth" });
+    },
+  },
 };
 </script>
 
@@ -58,6 +66,7 @@ export default {
     text-decoration: none;
     box-sizing: border-box;
     border-bottom: 5px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
 
     &:hover {
       border-bottom: 5px solid $yellow;
