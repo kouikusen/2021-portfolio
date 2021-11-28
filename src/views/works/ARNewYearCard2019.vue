@@ -11,7 +11,7 @@
     />
 
     <p>
-      It is a tradition for Japanese people to send out 年賀状（New Year
+      It is a tradition for Japanese people to send out 年賀状（New Year's
       Card）to families and friends when it's New Year.<br /><br />
       2019 was the second year I designed the New Year's Card for Mag2 Inc..<br />
       The concept was to add a little bit of creativity with the help of

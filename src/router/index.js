@@ -36,9 +36,9 @@ const routes = [
     component: () => import('../views/works/ByThem.vue')
   },
   {
-    path: '/works/Mag2-Live-2020',
-    name: 'Mag2-Live-2020',
-    component: () => import('../views/works/VotingGuide2020.vue')
+    path: '/works/Mag2-Live',
+    name: 'Mag2-Live',
+    component: () => import('../views/works/Mag2Live.vue')
   },
 ]
 

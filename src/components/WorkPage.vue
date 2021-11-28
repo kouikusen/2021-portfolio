@@ -147,6 +147,9 @@ export default {
 .work {
   background-color: var(--black);
   color: var(--white);
+  margin-left: 10px;
+  margin-right: 10px;
+
   * {
     margin: 0 auto $gutter;
   }
@@ -230,6 +233,7 @@ export default {
           li {
             list-style: none;
             margin-bottom: 0.3rem;
+            line-height: 2;
           }
         }
       }
