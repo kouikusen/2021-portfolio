@@ -6,7 +6,13 @@
         v-for="item in Projects"
         :key="item.title"
         :item="item"
-      ></WorkCard>
+        data-aos="fade-up"
+        data-aos-once="false"
+        data-aos-delay="300"
+        data-aos-duration="800"
+      >
+        ></WorkCard
+      >
     </MainSection>
     <MainSection title="Creations" :ifSpecial="true"
       ><ImageGalleryRow :items="Creations" />
@@ -24,6 +30,9 @@ import ImageGalleryRow from "@/components/ImageGalleryRow.vue";
 import ProjectsEng from "@/assets/data/projects.json";
 import ProjectsJp from "@//assets/data/projects-jp.json";
 import Creations from "@/assets/data/creations.json";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default {
   name: "Home",
@@ -44,10 +53,13 @@ export default {
   watch: {
     $route() {
       this.reloadProjects();
+
+      window.scrollTo({ top: 0, behavior: "smooth" });
     },
   },
   mounted() {
     this.reloadProjects();
+    AOS.init();
   },
   methods: {
     reloadProjects() {
