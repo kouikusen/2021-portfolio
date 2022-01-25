@@ -2,21 +2,23 @@
   <WorkPage :name="name">
     <img src="@/assets/images/works/by-them__top-cover.png" alt="cover image" />
 
+    <p>
+      「by
+      them」は2019年に始まった恋愛系WEBメディアです。私はロゴデザイン、サイト全体のデザインを制作した。
+    </p>
+
     <h1>LOGO DESIGN</h1>
 
     <div class="flex reverse">
       <div>
-        <h2>Logo Design Concept</h2>
+        <h2>ロゴコンセプト</h2>
         <p>
-          “When a romantic relationship makes you feel gloomy, we are here to
-          listen to your troubles and accompany you to move forward. “by them”
-          is the web magazine here to help you feel lighter. ”<br />
-          Following the concept above, I crafted the logo by hand-writing
-          calligraphy. In order to convey the variety and imperfection of human
-          beings, I reserved the asymmetry and some cute flaws without
-          destroying the visual balance. <br />
-          Also, the main color scheme is a color gradation from yellow to light
-          green that symbolize the infinite possibility and variety of humanity.
+          「恋をはじめとする人間関係に悩んでいるとき。そっと肩を支えて想いを聞いてくれ、一緒に一歩前へ進んでく
+          れるような存在に。誰かに話したいけど話せなかった心の中のモヤモヤがかたちになって、読めば少し、気持ち
+          が軽くなる。「by them(バイゼム)」はそんなWebマガジンです。」<br /><br />
+          上記のコンセプトを前提に、ロゴは親近感のあるカリグラフィーで作り、人間の多様性と不完成さを表現したい
+          ので、視覚バランスが崩れない限り、手書きにしかない欠陥と非對稱性を保留してる。そして、人間多様性の無
+          限性を表現したいため、メイン配色は淡い黄色から緑のグラデーション(スペクトラム)とした。
         </p>
       </div>
       <div>
@@ -47,14 +49,9 @@
 
     <h1>WEB DESIGN</h1>
     <p>
-      In order to create a browsing experience letting users feel stressless, I
-      add margin and blank spaces as much as possible. The font used in article
-      titles and decorations, “Ten Mincho”, carries cuteness and sensitivity at
-      the same time, which I think is the perfect font that can cooperate
-      perfectly with the brand’s concept.<br /><br />
-      This is my first work to design a large-scale media site. The requirements
-      of attention to details and the consistency of the design were quite a
-      challenge to me, and eventually I think it’s an amazing experience.
+      WEBサイトのデザインに関しては、サイト全体は出来る限り、マージンと余白を広くして、記事を読む時や、サ
+      イトブラウジング際にストレスを感じないようにしている。記事タイトルなどには感性とかわいさを同時に持っ
+      てるフォント「貂明朝体」を使用し、アクセントを加えている。
     </p>
     <img src="@/assets/images/works/by-them__web-design.png" alt="Web Design" />
   </WorkPage>
