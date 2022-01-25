@@ -1,31 +1,7 @@
 [
     {
-        "title": "Voting Guide 2020",
-        "no": 0,
-        "description": "動的コンテンツWebサイト",
-        "work": "UI/UX Design\nFrontend Development",
-        "position": "Designer\nDeveloper",
-        "org": "g0v.tw",
-        "year": 2020,
-        "www": "https://vote.ly.g0v.tw",
-        "types": "abd",
-        "url": "Voting-Guide-2020-jp"
-    },
-    {
-        "title": "Mag2 Summer Awards 2021",
-        "no": 1,
-        "description": "キャンペーンサイト",
-        "work": "UI/UX Design\nGraphic Design\n3D Animation\nFront-end Development",
-        "position": "Chief Designer\nChief Developer",
-        "org": "Magmag, Inc.",
-        "year": 2021,
-        "www": "",
-        "types": "abcd",
-        "url": "Mag2-Summer-Awards-2021-jp"
-    },
-    {
         "title": "by them",
-        "no": 2,
+        "no": 0,
         "description": "Webメディア",
         "work": "UI/UX Design\nLogo Design",
         "position": "Chief Designer",
@@ -36,8 +12,20 @@
         "url": "by-them-jp"
     },
     {
+        "title": "Voting Guide 2020",
+        "no": 1,
+        "description": "動的コンテンツWebサイト",
+        "work": "UI/UX Design\nFrontend Development",
+        "position": "Designer\nDeveloper",
+        "org": "g0v.tw",
+        "year": 2020,
+        "www": "https://vote.ly.g0v.tw",
+        "types": "abd",
+        "url": "Voting-Guide-2020-jp"
+    },
+    {
         "title": "AR 年賀状",
-        "no": 3,
+        "no": 2,
         "description": "Web-based AR Experience",
         "work": "UI/UX Design\nGraphic Design\n3D Modeling\nWeb Development",
         "position": "Chief Designer\nChief Developer",
@@ -46,6 +34,18 @@
         "www": "",
         "types": "abcd",
         "url": "AR-New-Year-Card-2019-jp"
+    },
+    {
+        "title": "Mag2 Summer Awards 2021",
+        "no": 3,
+        "description": "キャンペーンサイト",
+        "work": "UI/UX Design\nGraphic Design\n3D Animation\nFront-end Development",
+        "position": "Chief Designer\nChief Developer",
+        "org": "Magmag, Inc.",
+        "year": 2021,
+        "www": "",
+        "types": "abcd",
+        "url": "Mag2-Summer-Awards-2021-jp"
     },
     {
         "title": "Mag2! Live",
