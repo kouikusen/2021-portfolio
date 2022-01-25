@@ -92,7 +92,8 @@
 <script>
 import WorkHero from "@/components/WorkHero.vue";
 
-import Projects from "@/assets/data/projects.json";
+import ProjectsEng from "@/assets/data/projects.json";
+import ProjectsJp from "@//assets/data/projects-jp.json";
 
 export default {
   name: "Mag2 Summer Awards 2021",
@@ -104,13 +105,21 @@ export default {
   },
   data() {
     return {
-      Projects,
+      ProjectsEng,
+      ProjectsJp,
+      Projects: [],
       item: {},
       nextItem: {},
       previousItem: {},
     };
   },
   created: function () {
+    if (this.$route.path.indexOf("jp") !== -1) {
+      this.Projects = this.ProjectsJp;
+    } else {
+      this.Projects = this.ProjectsEng;
+    }
+
     const index = this.Projects.map(function (e) {
       return e.url;
     }).indexOf(this.name);
