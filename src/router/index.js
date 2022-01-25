@@ -41,6 +41,11 @@ const routes = [
     component: () => import('../views/works/ByThemJp.vue')
   },
   {
+    path: '/works/Voting-Guide-2020-jp',
+    name: 'Voting Guide 2020',
+    component: () => import('../views/works/VotingGuide2020Jp.vue')
+  },
+  {
     path: '/works/Mag2-Live',
     name: 'Mag2-Live',
     component: () => import('../views/works/Mag2Live.vue')
