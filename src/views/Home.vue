@@ -21,7 +21,8 @@ import MainSection from "@/components/MainSection.vue";
 import WorkCard from "@/components/WorkCard.vue";
 import ImageGalleryRow from "@/components/ImageGalleryRow.vue";
 
-import Projects from "@/assets/data/projects.json";
+import ProjectsEng from "@/assets/data/projects.json";
+import ProjectsJp from "@//assets/data/projects-jp.json";
 import Creations from "@/assets/data/creations.json";
 
 export default {
@@ -34,9 +35,19 @@ export default {
   },
   data() {
     return {
-      Projects,
+      ProjectsEng,
+      ProjectsJp,
+      Projects: [],
       Creations,
     };
+  },
+  mounted() {
+    const lang = this.$route.query.lang;
+    if (lang === "jp") {
+      this.Projects = this.ProjectsJp;
+    } else {
+      this.Projects = this.ProjectsEng;
+    }
   },
 };
 </script>
