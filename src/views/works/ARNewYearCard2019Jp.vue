@@ -12,7 +12,7 @@
 
     <p>
       見るだけでなく、顧客との交流も得るために、2Dの紙の制限を破って、3D
-      モデルと AR 技術を使用 して年賀状を制作した。
+      モデルと AR 技術を使用して年賀状を制作した。
     </p>
     <div class="video-wrap">
       <div class="video-container">

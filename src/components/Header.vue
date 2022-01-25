@@ -77,6 +77,8 @@ export default {
     box-sizing: border-box;
     border-bottom: 5px solid rgba(0, 0, 0, 0);
     cursor: pointer;
+    display: flex;
+    align-items: flex-end;
 
     &:hover {
       border-bottom: 5px solid $yellow;
