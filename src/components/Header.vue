@@ -2,7 +2,10 @@
   <div class="header">
     <div class="header__container">
       <div class="header__list">
-        <router-link class="header__items" :to="getWorkUrl">Work</router-link>
+        <router-link class="header__items" to="/">Work(Eng)</router-link>
+        <router-link class="header__items" to="/?lang=jp"
+          >Work(日本語)</router-link
+        >
         <router-link class="header__items" to="/about">About</router-link>
         <a class="header__items" @click="scrollMeTo('contact')">Contact</a>
       </div>

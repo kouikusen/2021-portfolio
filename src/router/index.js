@@ -42,8 +42,23 @@ const routes = [
   },
   {
     path: '/works/Voting-Guide-2020-jp',
-    name: 'Voting Guide 2020',
+    name: 'Voting Guide 2020 Jp',
     component: () => import('../views/works/VotingGuide2020Jp.vue')
+  },
+  {
+    path: '/works/AR-New-Year-Card-2019-jp',
+    name: 'AR-New-Year-Card-2019-Jp',
+    component: () => import('../views/works/ARNewYearCard2019Jp.vue')
+  },
+  {
+    path: '/works/Mag2-Summer-Awards-2021-jp',
+    name: 'Mag2 Summer Awards 2021 Jp',
+    component: () => import('../views/works/Mag2SummerAwards2021Jp.vue')
+  },
+  {
+    path: '/works/Mag2-Live-jp',
+    name: 'Mag2-Live-Jp',
+    component: () => import('../views/works/Mag2LiveJp.vue')
   },
   {
     path: '/works/Mag2-Live',

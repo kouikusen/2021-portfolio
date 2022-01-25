@@ -41,13 +41,23 @@ export default {
       Creations,
     };
   },
+  watch: {
+    $route() {
+      this.reloadProjects();
+    },
+  },
   mounted() {
-    const lang = this.$route.query.lang;
-    if (lang === "jp") {
-      this.Projects = this.ProjectsJp;
-    } else {
-      this.Projects = this.ProjectsEng;
-    }
+    this.reloadProjects();
+  },
+  methods: {
+    reloadProjects() {
+      const lang = this.$route.query.lang;
+      if (lang === "jp") {
+        this.Projects = this.ProjectsJp;
+      } else {
+        this.Projects = this.ProjectsEng;
+      }
+    },
   },
 };
 </script>
