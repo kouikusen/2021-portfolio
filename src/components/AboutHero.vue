@@ -10,6 +10,18 @@
         Tokyo, Japan.
       </p>
       <p class="hero__sub-content">
+        東京在住。Webデザイナー・フロントエンジニア。同時に京都芸術大学大学院
+        学祭デザイン領域に在籍、MFA修得中。<br>
+        好きなものはキャンプ、ゲーミングとイラストを描くこと。最近は3Dアート制作を勉強中。
+        <br /><br />
+        <b style="opacity: 0.6;">得意分野</b><br />
+        <ul>
+
+        <li>UI/UXデザイン</li>
+        <li>グラフィックデザイン</li>
+        <li>HTML/ CSS/ Javascript/ Vue.js/ Nuxt.js…</li>
+        </ul>
+        <br /><br />
         I am also a MFA student at Kyoto University of Art and Design. I speak
         Mandarin, Japanese, and English.<br />
         <br />
@@ -31,19 +43,23 @@ export default {
 
 <style scoped lang="scss">
 .hero {
-  height: 100vh;
+  // height: 100vh;
   background-color: var(--black);
+  height: auto;
 
   // text
   &__text-container {
     text-align: left;
     padding: 20px;
 
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    // position: absolute;
+    // left: 50%;
+    // top: 50%;
+    // transform: translate(-50%, -50%);
     color: var(--white);
+
+    margin-left: auto;
+    margin-right: auto;
 
     z-index: 1;
     max-width: $paragraphMaxWidth;
